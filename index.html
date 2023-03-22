@@ -7,12 +7,13 @@
 
     </head>
     <body>
+         <!---linking the script file--->
         <script src="index.js"></script>
         <header id="phase1">
             <h1>Phase 1: Code Challenge(Week 1)</h1>
         </header>
         <section id="generator">
-             <!---linking the script file--->
+            
             <h1>Student Grade Generator </h1>
             <p><b>Input student marks.</b></p>
              
@@ -20,19 +21,33 @@
             <input type="text" id="input">
      
             <!---Button with an onclick--->
-            <button onclick="grade()">Grade</button>
+            <button onclick="grade(event)">Grade</button>
+            <p id="gradeOutput">Grade: </p>
 
         </section>
 
         <section id="detector">
-            <h1>Speed Detector </h1>
+            <h1>Speed Detector</h1>
             <p><b>Input speed of a car.</b></p>
              
             <!---Input that takes in a value-->
-            <input type="text" id="input">
+            <input type="text" id="speedInput">
      
             <!---Button with an onclick--->
-            <button>Submit</button>
+            <button id= "speedButton" onclick="points(event)">Submit</button>
+            <p id="speedOutput">Result: </p>
+
+        </section>
+
+        <section id="calculator">
+            <h1>Net Salary Calculator</h1>
+
+            <!----inputs that will take in salary and benefits-->
+            <input type="text" placeholder="Enter Salary" id="salary">
+            <input type="text" placeholder="Enter Benefits" id="benefits">
+
+            <!---Button with an onclick--->
+            <button id="calculate" onclick="my_calculate(argument)">Calculate</button>
 
         </section>
        
